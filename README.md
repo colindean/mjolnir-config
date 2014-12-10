@@ -10,8 +10,9 @@ have Homebrew installed (and you probably do if you're looking at this):
     echo 'rocks_servers = { "http://rocks.moonscript.org" }' > ~/.luarocks/config.lua
     brew install caskroom/cask/brew-cask && brew cask install mjolnir
     luarocks install mjolnir.bg.grid
+    luarocks install mjolnir.hotkey
 
-That last line installs some Lua deps with luarocks.
+Those last lines install some Lua deps with luarocks.
 
 Fortunately, this installs everything that is needed as dependencies!
 
