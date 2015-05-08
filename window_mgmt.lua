@@ -14,7 +14,7 @@ grid.GRIDHEIGHT = 2
 grid.GRIDWIDTH = 4
 
 local grid_shortcuts = {
-  [";"] = function() grid.snap(window.focusedwindow()) end,
+  [";"] = function() grid.snap(window.focusedwindow()) alert.show("╔═╦═╗\n   s  n \n╠═╬═╣\n   a  p \n╚═╩═╝") end,
   J = function() grid.pushwindow_up() alert.show("🔼") end,
   H = function() grid.pushwindow_left() alert.show("◀️") end,
   L = function() grid.pushwindow_right() alert.show("▶️") end,
