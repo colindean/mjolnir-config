@@ -1,12 +1,25 @@
 -- Window Management
 
 -- Read through the script to see what it does. It's pretty clear based on
--- function name. 
+-- function name.
 
-local grid = require "mjolnir.bg.grid"
-local window = require "mjolnir.window"
-local hotkey = require "mjolnir.hotkey"
-local alert = require "mjolnir.alert"
+local griderr, grid  = pcall(function() return require "mjolnir.bg.grid" end)
+local windowerr, window = pcall(function() return require "mjolnir.window" end)
+local hotkeyerr, hotkey = pcall(function() return require "mjolnir.hotkey" end)
+local alerterr, alert = pcall(function() return require "mjolnir.alert" end)
+
+function print_if_not_table(var)
+  if not(type(var) == "table") then print(var) end
+end
+
+if not griderr or not windowerr or not hotkeyerr or not alerterr then
+  mjolnir.showerror("Some packages appear to be missing.")
+  print("At least one package was missing. Have you installed the packages? See README.md.")
+  print_if_not_table(grid)
+  print_if_not_table(window)
+  print_if_not_table(hotkey)
+  print_if_not_table(alert)
+end
 
 mash = {"cmd", "alt", "ctrl"}
 
