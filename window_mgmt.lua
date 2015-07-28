@@ -53,6 +53,8 @@ local grid_shortcuts = {
   N = function() grid.pushwindow_nextscreen() alert.show("➡️") end,
   P = function() grid.pushwindow_prevscreen() alert.show("⬅️") end,
 }
+print("If Mjolnir console windows can be manipulated, but others cannot, "..
+      "ensure that Mjolnir is allowed in Accessibility preferences.")
 
 for key, func in pairs(grid_shortcuts) do
   hotkey.bind(mash, key, func)
