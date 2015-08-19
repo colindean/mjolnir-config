@@ -33,6 +33,9 @@ end
 function fullheightatleftwithwidth(width)
   return { x = 0, y = 0, w = width, h = grid.GRIDHEIGHT }
 end
+function fullheightatrightwithwidth(width)
+  return { x = grid.GRIDWIDTH - width, y = 0, w = width, h = grid.GRIDHEIGHT }
+end
 
 function interp(s, tab)
   return (s:gsub('($%b{})', function(w) return tab[w:sub(3, -2)] or w end))
@@ -51,6 +54,10 @@ local grid_shortcuts = {
   ["1"] = function() grid.set(window.focusedwindow(), fullheightatleftwithwidth(1), window.focusedwindow():screen()) alert.show("1") end,
   ["2"] = function() grid.set(window.focusedwindow(), fullheightatleftwithwidth(2), window.focusedwindow():screen()) alert.show("1") end,
   ["3"] = function() grid.set(window.focusedwindow(), fullheightatleftwithwidth(3), window.focusedwindow():screen()) alert.show("1") end,
+  ["9"] = function() grid.set(window.focusedwindow(), fullheightatrightwithwidth(3), window.focusedwindow():screen()) alert.show("9") end,
+  ["0"] = function() grid.set(window.focusedwindow(), fullheightatrightwithwidth(2), window.focusedwindow():screen()) alert.show("0") end,
+  ["-"] = function() grid.set(window.focusedwindow(), fullheightatrightwithwidth(1), window.focusedwindow():screen()) alert.show("-") end,
+  
   G = function()
         local point = grid.get(window.focusedwindow())
         alert.show(interp("⬌ ${x} ⬍ ${y}\n\t${w} × ${h}", point))
