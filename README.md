@@ -6,7 +6,7 @@ Get mjolnir from its website or do the following, which is much easier if you
 have Homebrew installed (and you probably do if you're looking at this):
 
     brew install lua luarocks
-    mkdir p ~/.luarocks
+    mkdir -p ~/.luarocks
     echo 'rocks_servers = { "http://rocks.moonscript.org" }' > ~/.luarocks/config.lua
     brew install caskroom/cask/brew-cask && brew cask install mjolnir
     luarocks install mjolnir.bg.grid
