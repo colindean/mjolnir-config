@@ -11,6 +11,11 @@ have Homebrew installed (and you probably do if you're looking at this):
     brew install caskroom/cask/brew-cask && brew cask install mjolnir
     luarocks install mjolnir.bg.grid
     luarocks install mjolnir.hotkey
+    luarocks install mjolnir.fnutils
+    luarocks install mjolnir.keycodes
+    luarocks install mjolnir.application
+    luarocks install mjolnir.geometry
+    luarocks install mjolnir.screen
 
 Those last lines install some Lua deps with luarocks.
 
