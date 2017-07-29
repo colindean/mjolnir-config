@@ -1,3 +1,5 @@
+🛑⚠️💤 I no longer use or maintain this configuration. I ported this and publicized it as [my Hammerspoon configuration](https://github.com/colindean/hejmo/tree/master/dotfiles/hammerspoon). This repo will be available until I decide to delete it sometime in 2018.
+
 # @colindean's Mjolnir configuration
 
 [Mjolnir](http://mjolnir.io) is a fantastic window management system for OS X.
