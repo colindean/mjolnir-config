@@ -1,4 +1,8 @@
-🛑⚠️💤 I no longer use or maintain this configuration. I ported this and publicized it as [my Hammerspoon configuration](https://github.com/colindean/hejmo/tree/master/dotfiles/hammerspoon). This repo will be available until I decide to delete it sometime in 2019.
+# 🛑⚠️💤 
+
+⚠️ I no longer use or maintain this configuration. ⚠️
+
+I ported this and publicized it as [my Hammerspoon configuration](https://github.com/colindean/hejmo/tree/master/dotfiles/hammerspoon).
 
 # @colindean's Mjolnir configuration
 
